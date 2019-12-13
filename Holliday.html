@@ -5,8 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Inline List</title>
-  <link href="inline-list.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script> 
+      $(document).ready(function(){
+        $("button").click(function(){
+          $("div").animate({left: '250px'});
+        });
+      });
+      </script> 
 </head>
 
 <body style="background-color:#FFFFFF">
@@ -15,7 +22,7 @@
     <h1 align="center">RuFi</h1>
     <nav>
       <ul class="nav">
-        <li><button><a href="websiteRuFi.html" class="button">Home</a></button></li>
+        <li><button><a href="index.html" class="button">Home</a></button></li>
         <li><button><a href="Pictures.html" class="button">Pictures</a></button></li>
         <li><button><a href="Food.html" class="button">Food</a></button></li>
         <li><button><a href="Holliday.html" class="button">Holliday</a></button></li>
@@ -23,13 +30,17 @@
     </nav>
   </header>
 
+  <button>Start Animation</button>
+
   <select class="select-css">
-	<option>Selecteer hieronder 1 van mijn vakanties:</option>
-	<option>Bussum-Heide</option>
-	<option>Balkon</option>
-	<option>Kelder</option>
-	<option>Douche</option>
-</select>
+    <option>Selecteer hieronder 1 van mijn vakanties:</option>
+    <option>Bussum-Heide</option>
+    <option>Balkon</option>
+    <option>Kelder</option>
+    <option>Douche</option>
+  </select>
+  
+    <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
 
 </body>
 
