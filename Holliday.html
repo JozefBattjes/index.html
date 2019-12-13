@@ -7,13 +7,23 @@
   <title>Inline List</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-  <script> 
-      $(document).ready(function(){
-        $("button").click(function(){
-          $("div").animate({left: '250px'});
-        });
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("div").animate({ left: '250px' });
       });
-      </script> 
+    });
+  </script>
+  <script>
+    var myNum1 = 7;
+    var myNum2 = 10;
+    if (myNum1 > myNum2) {
+      alert("Klik mij weg, om de vakanties van RuFi te zien");
+    }
+    else {
+      alert("Mij mag je wegklikken");
+    }
+  </script>
 </head>
 
 <body style="background-color:#FFFFFF">
@@ -39,8 +49,8 @@
     <option>Kelder</option>
     <option>Douche</option>
   </select>
-  
-    <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+  <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
 
 </body>
 
